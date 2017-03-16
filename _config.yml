@@ -1,0 +1,39 @@
+# Site settings
+title: Simone Grotti
+description: 'Software Engineer'
+url: 'http://joshgerdes.com/jekyll-uno'
+baseurl: '/smgrotti-personal/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Simone Grotti'
+  email: simone.grotti@yahoo.com
+  twitter_username: smgrotti
+  facebook_username: simone.grotti.7
+  github_username:  smgrotti
+  linkedin_username:  simone-grotti-33a926119
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
